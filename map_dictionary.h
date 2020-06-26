@@ -1,5 +1,5 @@
-#ifndef UNORDEREDDICTIONARY_H
-#define UNORDEREDDICTIONARY_H
+#ifndef MAP_DICTIONARY_H
+#define MAP_DICTIONARY_H
 
 #include "dictionary.h"
 
@@ -90,4 +90,4 @@ private:
 
 };
 
-#endif // UNORDEREDDICTIONARY_H
+#endif
