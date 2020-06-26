@@ -1,9 +1,7 @@
-#include <iostream>
 #include <vector>
+#include <cassert>
 
 #include "map_dictionary.h"
-
-using namespace std;
 
 int main()
 {
@@ -26,6 +24,7 @@ int main()
     const int & ff = gg.Get(&s);
     int & df = gg.Get(&s);
     df = 44;
+    assert(df == s);
     MapDictionary<int&, int *> ss;
     ss.Set(rs, &s);
     int * zz = ss.Get(rs);

@@ -4,7 +4,6 @@
 #include "dictionary.h"
 
 #include <map>
-#include <memory>
 
 template<class TKey>
 class MapNotFoundException : public NotFoundException<TKey>
