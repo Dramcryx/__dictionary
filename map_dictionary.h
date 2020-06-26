@@ -35,7 +35,7 @@ std::enable_if_t<std::is_lvalue_reference<TValue>::value, VALUE_TYPE> cast_in(co
 template <typename TValue, typename VALUE_TYPE>
 std::enable_if_t<!std::is_lvalue_reference<TValue>::value, VALUE_TYPE> cast_in(const TValue & v)
 {
-    return (VALUE_TYPE)v;
+    return v;
 }
 
 template <typename TValue, typename VALUE_TYPE>
